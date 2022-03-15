@@ -17,6 +17,7 @@ html {
 body {
      font-family: 'Roboto', sans-serif;
      text-align: center;
+     max-width: 1920px;
 }
 
 
@@ -136,8 +137,11 @@ main {
 }
 
 h1 {
-     font-size: 4.5rem;
+     font-size: 4rem;
      margin-bottom: 0;
+}
+.h1_dsktp{
+     display: none;
 }
 
 .title p {
@@ -298,6 +302,13 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 @media all and (min-width:800px) {
+     .h1_mobile{
+          display: none;
+     }
+     .h1_dsktp{
+          display: block;
+     }
+    
      .projects_sections section {
           width: 40%;
           height: 200px;
@@ -311,6 +322,9 @@ footer {
      }
 }
 @media all and (min-width:1000px) {
+     .h1_mobile{
+          display: none;
+     }
 
      .bx-menu,
      #show-menu {
@@ -340,7 +354,7 @@ footer {
 
      main {
           flex-wrap: nowrap;
-          padding: 100px 50px 40px;
+          padding: 100px 125px 40px;
      }
 
      .title {
@@ -353,15 +367,20 @@ footer {
 
      #needs {
           text-align: left;
+          padding: 20px 125px ;
      }
 
      #projects {
           display: flex;
           flex-direction: column;
+          padding-bottom: 53.3px;
      }
 
      .projects_sections {
           display: flex;
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
      }
 
      .projects_sections section {
