@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+}
+
+body {
+     font-family: 'Roboto', sans-serif;
+     text-align: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header img {
+     width: 30px;
+     padding: 5px;
+}
+
+header {
+     z-index: 11;
+     position: fixed;
+     width: 100%;
+     background-color: #30475E;
+     color: #F05454;
+     font-size: 1.5rem;
+     padding: 10px 20px;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: #3434349b 0 0 5px 2px;
+
+}
+
+header div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+div i {
+     font-size: 3rem;
+     cursor: pointer;
+
+}
+
+div i:hover {
+     transform: scale(1.1);
+ 
+
+}
+
+a {
+     text-decoration: none;
+     color: #F05454;
+}
+
+.menu {
+     background-color: #30475E;
+     z-index: 1;
+     position: absolute;
+     transform: translate(0, -110%);
+     border-top: solid 1px #f054545e;
+     transition: all ease-in-out .5s;
+     width: 100%;
+}
+
+.menu_active {
+     transform: translate(0, 44.5%);
+     padding: 10px 10px 0;
+     transition: all ease-in-out .5s;
+}
+
+.menu--scrolled {
+ position: fixed;
+}
+
+ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+nav ul li {
+     padding: 2px;
+     font-size: 2rem;
+     transition: all ease-in-out .5s;
+
+}
+
+nav ul li:hover {
+     transform: scale(1.1);
+     transition: transform ease-in-out .5s;
+}
+
+/* main */
+main {
+     /* atteglando el top de main section */
+     padding: 100px 50px 20px;
+     display: flex;
+     flex-wrap: wrap-reverse;
+     justify-content: space-around;
+     align-items: center;
+     background-color: #F5F5F5;
+     color: #F05454;
+}
+
+.title {
+     text-align: center;
+}
+
+.profile {
+     width: 300px;
+     border-radius: 100%;
+     border: #F05454 solid 10px;
+     background-color: #F05454;
+     transition: background-color ease-in-out .3s;
+     transition: border ease-in-out .3s .1s;
+}
+.profile:hover{
+     border: #30475E solid 10px;
+     background-color: #30475E;
+     transition: background-color ease-in-out .3s;
+     transition: border ease-in-out .3s .1s;
+}
+
+h1 {
+     font-size: 4.5rem;
+     margin-bottom: 0;
+}
+
+.title p {
+     margin-top: 0;
+     font-size: 3rem;
+}
+
+.web{
+     transition: all ease-in-out .3s;
+
+}
+.web:hover{
+     color:#30475E;
+     transition: all ease-in-out .3s;
+}
+
+#needs {
+     padding: 20px 50px;
+     background-color: #30475E;
+     color: #F5F5F5;
+
+}
+
+h2 {
+     font-size: 4rem;
+}
+
+#projects {
+     padding: 20px 50px;
+     background-color: #F05454;
+     color: #30475E;
+}
+
+.projects_sections {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.projects_sections section{
+     margin: 10px;
+     width: 70%;
+}
+
+.pro {
+     width: 100%;
+     height: 50%;
+     border-radius: 8px;
+     box-shadow: #3434349b 0 0 5px 2px;
+     transition: transform ease-in-out .3s;
+}
+
+.pro:hover {
+     transform: scale(1.1);
+     box-shadow: #3434349b 0 0 10px 4px;
+     transition: transform ease-in-out .5s;
+}
+
+p {
+     font-size: 3rem;
+}
+
+#contact {
+     padding: 20px 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #F5F5F5;
+     color: #F05454;
+}
+
+#contact h2 {
+     margin-bottom: 0;
+}
+
+#contact p {
+     margin-top: 0;
+}
+
+.top_fields {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 10px;
+     flex-direction: column;
+}
+
+.top_fields .field {
+     margin-bottom: 10px;
+}
+
+input {
+     height: 50px;
+     font-size: 3rem;
+     width: 80%;
+     padding: 10px;
+}
+
+input::placeholder {
+     font-size: 3rem;
+}
+
+.bottom_field {
+     margin-bottom: 10px;
+
+}
+
+textarea {
+     font-size: 3rem;
+     padding: 10px;
+     width: 80%;
+}
+
+textarea::placeholder {
+     font-size: 3rem;
+}
+
+li input {
+     background-color: #30475E;
+     padding: 5px 20px;
+     color: #F05454;
+     border-radius: 5px;
+     border: none;
+     cursor: pointer;
+}
+
+li input:hover {
+     background-color: #3d5a76;
+
+}
+
+footer {
+     background-color: #30475E;
+     padding: 20px 50px;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.socials {
+     font-size: 3rem;
+     transition: all ease-in-out .3s;
+
+}
+
+.socials:hover {
+     transform: scale(1.2);
+     color: #F5F5F5;
+     transition: all ease-in-out .5s;
+}
+
+#menu {
+     display: none
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media all and (min-width:800px) {
+     .projects_sections section {
+          width: 40%;
+          height: 200px;
+          margin: 10px;
+     }
+
+     .pro {
+
+          height:100%;
+       
+     }
+}
+@media all and (min-width:1000px) {
+
+     .bx-menu,
+     #show-menu {
+          display: none;
+     }
+
+     header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+     }
+
+     #menu {
+          display: flex;
+          width: 30%;
+     }
+
+     #menu ul {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+     }
+
+     #menu ul li {
+          width: 40%;
+     }
+
+     main {
+          flex-wrap: nowrap;
+          padding: 100px 50px 40px;
+     }
+
+     .title {
+          text-align: left;
+     }
+     h1{
+          font-size: 6rem;
+     }
+     
+
+     #needs {
+          text-align: left;
+     }
+
+     #projects {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .projects_sections {
+          display: flex;
+     }
+
+     .projects_sections section {
+          width: 30%;
+          height: 250px;
+     }
+
+     .pro {
+          width: 100%;
+          height: 100%;
+     }
+
+     .top_fields {
+          flex-direction: row;
+     }
+
+     textarea {
+          width: 90%;
+          font-size: 2rem;
+     }
+
+     textarea::placeholder {
+          font-size: 2rem;
+     }
+
+     input {
+          height: 30px;
+          font-size: 2rem;
+     }
+
+     input::placeholder {
+          font-size: 2rem;
+
+     }
+
+     li input {
+          width: 90%;
+          padding: 0;
+     }
+}
