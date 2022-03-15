@@ -58,13 +58,17 @@ div i {
 
 div i:hover {
      transform: scale(1.1);
- 
-
 }
 
 a {
      text-decoration: none;
      color: #F05454;
+     transition: color ease-out .5s;
+
+}a:hover {
+     color: #F5F5F5;
+     transition: color ease-in .5s;
+
 }
 
 .menu {
@@ -97,13 +101,14 @@ nav ul li {
      padding: 2px;
      font-size: 2rem;
      transition: all ease-in-out .5s;
-
 }
 
 nav ul li:hover {
      transform: scale(1.1);
      transition: transform ease-in-out .5s;
 }
+
+
 
 /* main */
 main {
@@ -272,8 +277,8 @@ li input {
 
 li input:hover {
      background-color: #3d5a76;
-
 }
+
 
 footer {
      background-color: #30475E;
