@@ -303,6 +303,10 @@ footer {
      display: none
 }
 
+.fill-warning{
+     border: solid 2px red;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

@@ -5,11 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Your description goes here">
 	<meta name="keywords" content="one, two, three">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 	<title>Erick Felix | WebDev</title>
-	
+
 	<!-- external CSS link -->
 	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -94,26 +94,25 @@
 		<h2>Let's Get in touch!</h2>
 		<p>Open to work with new freelance clients</p>
 
-		<form method="post" action="mailto:erickfelixs@icloud.com">
+		<form method="post" id="form">
 			<div class="fields">
 				<div class="top_fields">
 					<div class="field f1">
-
-						<input type="text" name="name" id="name" placeholder="Name here:" />
+						<input type="text" name="name" id="fullName" placeholder="Name here:" />
 					</div>
 					<div class="field f2">
 
-						<input type="email" name="email" id="email" placeholder="Email here:" />
+						<input type="email" name="email" id="email_id" placeholder="Email here:" />
 					</div>
 				</div>
 				<div class="bottom_field">
 					<div class="field">
 						<textarea name="message" id="message" rows="4"
-							placeholder="Send a message and lets schedule a chat!"></textarea>
+							placeholder="Send a message and let's schedule a chat!"></textarea>
 					</div>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="Send Message" /></li>
+					<li><input id="submit" type="submit" value="Send Message" /></li>
 				</ul>
 			</div>
 		</form>
@@ -126,6 +125,12 @@
 
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("HcfSvwg3cJUz8fMVf");
+		})();
+	</script>
 </body>
 
 </html>
