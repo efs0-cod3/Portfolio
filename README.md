@@ -1,5 +1,8 @@
-# portfolio
-personal protfolio
+# Personal porfolio 
+### Build with the Big Threes
+* HTML
+* CSS
+* JavaScript
+* Mobile First!
 
-
-#live Site[https://erickfelix.netlify.app/]
+## [Live Site](https://erickfelix.netlify.app/)
