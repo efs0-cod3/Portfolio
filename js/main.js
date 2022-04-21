@@ -93,7 +93,9 @@ function form(e) {
     }
     emailjs.send('service_quuge9h', 'template_4tf2otb', parameters)
       .then(function (res) {
-        alert(`Thanks ${fName.value}, your message was sent`)
+        showModal()
+        setTimeout(removeModal, 4000);
+
         btn.value = "Send Message"
         fName.value = ''
         email.value = ''
@@ -110,4 +112,15 @@ function removeWarning() {
   message.setAttribute('placeholder', 'Send a message and let\'s schedule a chat!');
   email.setAttribute('placeholder', 'Email here...');
   fName.setAttribute('placeholder', 'Name here...');
+}
+
+function showModal() {
+  document.querySelector('.ty_modal').classList.add('ty_modal--visible')
+  document.getElementById('ty_msg').textContent=`Thanks ${fName.value}, your message has been sent`;
+
+}
+function removeModal() {
+  document.querySelector('.ty_modal').classList.remove('ty_modal--visible')
+  document.getElementById('ty_msg').textContent=``;
+
 }

@@ -307,6 +307,35 @@ footer {
      border: solid 2px red;
 }
 
+.ty_modal{
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, .7);
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all .4s ease-in-out;
+visibility: hidden;
+opacity: 0;
+}
+
+.ty_modal--visible{
+     visibility: visible;
+     opacity: 1;
+     width: 100vw;
+     height: 100vh;
+   }
+#ty_msg{
+     border-radius: 10px;
+     background-color: #F05454;
+     color: #30475E;
+     width: 30%;
+     padding: 50px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -432,4 +461,5 @@ footer {
           width: 90%;
           padding: 0;
      }
+
 }
