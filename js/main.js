@@ -101,7 +101,6 @@ function form(e) {
         email.value = ''
         form_message.value = ''
       })
-
   };
 }
 
