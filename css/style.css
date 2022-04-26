@@ -305,6 +305,7 @@ footer {
 
 .fill-warning{
      border: solid 2px red;
+     border-radius: 5px;
 }
 
 .ty_modal{
